@@ -2,11 +2,10 @@
 Flask web application, to save url and file with a short name.
 
 ## To run application
-1. Download the zip file
-2. To run flask application
+1. Download the zip file and to run flask application, follow this steps.
   #### Install pipenv :
   ``` pip install pipenv ```
-  #### After pipenv installation, tun pipenv command :
+  #### After pipenv installation, run pipenv command :
   ``` pipenv shell ``` or ``` pipenv run ```
   #### Run application :
   ``` python app.py ```
