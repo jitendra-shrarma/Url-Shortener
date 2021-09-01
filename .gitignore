@@ -23,5 +23,8 @@ ENV/
 env.bak/
 venv.bak/
 
+# json file
+urls.json
+
 # mkdocs documentation
 /site
