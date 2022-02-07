@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, redirect, url_for, flash, abort, session, jsonify
+from flask import Flask, render_template, request, redirect
+from flask import url_for, flash, abort, session, jsonify
 from werkzeug.utils import secure_filename
 import json
 import os.path
@@ -77,11 +78,13 @@ def redirectToURL(code):
 
 @app.errorhandler(404)
 def pageNotFound(error):
+    """custom errorhandler to render 404 error to page_not_found.html"""
     return render_template('page_not_found.html'), 404
 
 
 @app.route('/api')
 def sessionAPI():
+    """returns all the session keys"""
     return jsonify(list(session.keys()))
 
 
